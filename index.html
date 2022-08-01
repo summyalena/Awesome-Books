@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/main.js" defer></script>
   <title>Awesome Books</title>
 </head>
 <body>
@@ -12,7 +12,13 @@
 
   <div class="book-list-section">
     <div class="book-list-container">
-
+      <h1 class="awesome-books">Awesome Boooks</h1>
+      <div class="books-card">
+        <h3 class="book-title">Haryy Potter</h3>
+        <p class="book-about">JK Rowling</p>
+        <button type="button" class="button-remove">Remove</button>
+        <br><hr>
+      </div>
     </div>
   </div>
 
@@ -20,7 +26,11 @@
 
   <div class="book-adder-section">
     <div class="book-adder-container">
-      
+      <form method="post">
+        <input type="text" class="title"> <br><br>
+        <input type="text" class="author"> <br><br>
+        <button type="button" class="add">ADD</button>
+      </form>
     </div>
   </div>
   
