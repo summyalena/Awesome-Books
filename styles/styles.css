@@ -1,3 +1,9 @@
+.awesome-books {
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+}
+
 .books-card {
   border: 2px solid black;
   display: flex;
@@ -7,6 +13,10 @@
 .books-card-flex {
   display: inline;
   flex-direction: row;
+}
+
+.books-card-flex:nth-child(even) {
+  background-color: #efefef;
 }
 
 .button-remove {
