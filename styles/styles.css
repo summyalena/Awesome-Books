@@ -1,0 +1,52 @@
+.awesome-books {
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+}
+
+.books-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.books-card-flex {
+  display: inline;
+  flex-direction: row;
+}
+
+.books-card-flex:nth-child(even) {
+  background-color: #efefef;
+}
+
+.button-remove {
+  margin-left: 45%;
+}
+
+.add-new-book {
+  display: block;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.book-title {
+  width: 20%;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.book-about {
+  width: 20%;
+  display: inline-block;
+}
+
+input {
+  margin: auto;
+  display: block;
+}
+
+.add {
+  margin: auto;
+  display: block;
+}
