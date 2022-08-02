@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <h3 class="book-title">${book[0].bookTitle}</h3>
     <p class="book-about">${book[0].bookAuthor}</p>
     <button type="button" class="button-remove">Remove</button>
-    <br><hr>
     </div>
     `;
   });
