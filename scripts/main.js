@@ -1,10 +1,9 @@
 let books;
-// eslint-disable-next-line
+
 if (localStorage.getItem('books') === null) {
   books = [];
 } else {
-  // eslint-disable-next-line
-  books = JSON.parse(localStorage.getItem('books'))
+  books = JSON.parse(localStorage.getItem('books'));
 }
 
 document.querySelector('form').addEventListener('submit', () => {
@@ -13,8 +12,7 @@ document.querySelector('form').addEventListener('submit', () => {
 
   const book = [{ bookTitle, bookAuthor }];
   books.push(book);
-  // eslint-disable-next-line
-  localStorage.setItem('books', JSON.stringify(books))
+  localStorage.setItem('books', JSON.stringify(books));
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,17 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const bookAuthor = e.target.previousElementSibling.innerText;
       const bookTitle = e.target.previousElementSibling.previousElementSibling.innerText;
 
-      // eslint-disable-next-line no-plusplus
-      for (let i = 0; i < books.length; i++) {
+      for (let i = 0; i < books.length; i += 1) {
         if (books[i][0].bookTitle === bookTitle && books[i][0].bookAuthor === bookAuthor) {
           books.splice(i, 1);
         }
       }
-
-      // eslint-disable-next-line
-      localStorage.clear()
-      // eslint-disable-next-line
-      localStorage.setItem('books', JSON.stringify(books))
+      localStorage.clear();
+      localStorage.setItem('books', JSON.stringify(books));
       e.target.parentElement.remove();
     });
   });
