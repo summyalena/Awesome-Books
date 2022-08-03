@@ -70,3 +70,18 @@ document.querySelector('form').addEventListener('submit', () => {
   const x = new Booklibrary(document.querySelector('.title').value, document.querySelector('.author').value);
   x.add();
 });
+
+const addNewPage = document.querySelector('.book-adder-section');
+const addListPage = document.querySelector('.book-list-section');
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.display-add-new').addEventListener('click', () => {
+    addListPage.classList.toggle('active');
+    addNewPage.classList.toggle('active');
+  });
+
+  document.querySelector('.display-list').addEventListener('click', () => {
+    addListPage.classList.remove('active');
+    addNewPage.classList.remove('active');
+  });
+});

@@ -73,3 +73,25 @@ input {
   width: 32%;
   margin: 0;
 }
+
+.book-adder-section {
+  display: none;
+}
+
+.book-adder-section.active {
+  display: block;
+}
+
+.book-list-section {
+  display: block;
+}
+
+.book-list-section.active {
+  display: none;
+}
+
+.footer-container {
+  border: solid black 2px;
+  margin-top: 2em;
+  padding-left: 2em;
+}
