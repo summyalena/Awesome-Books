@@ -6,8 +6,6 @@ if (localStorage.getItem('books') === null) {
   books = JSON.parse(localStorage.getItem('books'));
 }
 
-// localStorage.clear();
-
 class Booklibrary {
   constructor(title, author) {
     this.title = title;

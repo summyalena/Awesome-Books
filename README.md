@@ -6,17 +6,11 @@
 
 ## Description
 
-## Hosting
+This project was made to keep track of a list of books and dynamical assign pages to
 
-This Portfolio is hosted on GitHub Page. [Click here](https://summyalena.github.io/Awesome-Books/)
-
-### Mobile version Screenshot:
-
-
-
-### Desktop version Screenshot:
-
-
+- List of books
+- Contact Info
+- Add more books page
 
 ### Objective
 
@@ -27,6 +21,7 @@ This project's goals are as follows:
 - HTML, CSS, Javascript (Vanilla)
 
 ## Getting Started
+
   This is a single-page application that lets one add his/her favorite books and deletes if needed. Do well to give a star 🌟 as we progress on a journey to becoming better.
 
 ### Prerequisites
@@ -65,10 +60,9 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to ![](https://img.shields.io/badge/Microverse-blueviolet) is where you Gain skills you need to get hired. Learn Online and connect to life changing opportunities. [Apply today](https://www.microverse.org/?grsf=uv064g)
 Design acknowledgment goes to ###Cindy Shin in Behance [Click here to see design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
-## Update info
 
+## Update info
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
-
+This project is [MIT](./LICENSE) licensed.
