@@ -6,6 +6,8 @@ if (localStorage.getItem('books') === null) {
   books = JSON.parse(localStorage.getItem('books'));
 }
 
+// localStorage.clear();
+
 class Booklibrary {
   constructor(title, author) {
     this.title = title;
@@ -26,7 +28,7 @@ class Booklibrary {
     const bookTitle = this.title;
 
     for (let i = 0; i < books.length; i += 1) {
-      if (books[i][0].bookTitle === bookTitle && books[i][0].bookAuthor === bookAuthor) {
+      if (books[i][0].booktitle === bookTitle && books[i][0].bookauthor === bookAuthor) {
         books.splice(i, 1);
       }
     }
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const bookAuthor = e.target.previousElementSibling.innerText;
       const bookTitle = e.target.previousElementSibling.previousElementSibling.innerText;
 
-      const y = new Booklibrary(bookAuthor, bookTitle);
+      const y = new Booklibrary(bookTitle, bookAuthor);
       y.remove();
       e.target.parentElement.remove();
     });
