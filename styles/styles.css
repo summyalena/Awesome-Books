@@ -95,3 +95,39 @@ input {
   margin-top: 2em;
   padding-left: 2em;
 }
+
+.contact-section {
+  display: none;
+}
+
+.contact-section.active {
+  display: block;
+}
+
+.contact-header {
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+.contact-paragraph {
+  margin: auto;
+  text-align: justify;
+  width: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding-bottom: 2em;
+}
+
+.contact-list {
+  margin: auto;
+  width: 75%;
+}
+
+.contact-list > li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
