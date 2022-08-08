@@ -1,55 +1,5 @@
-let books;
-
-if (localStorage.getItem('books') === null) {
-  books = [];
-} else {
-  books = JSON.parse(localStorage.getItem('books'));
-}
-
-// localStorage.clear();
-
-class Booklibrary {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-
-  add() {
-    const bookauthor = this.author;
-    const booktitle = this.title;
-
-    const book = [{ booktitle, bookauthor }];
-    books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-
-  remove() {
-    const bookAuthor = this.author;
-    const bookTitle = this.title;
-
-    for (let i = 0; i < books.length; i += 1) {
-      if (books[i][0].booktitle === bookTitle && books[i][0].bookauthor === bookAuthor) {
-        books.splice(i, 1);
-      }
-    }
-    localStorage.clear();
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  books.forEach((book) => {
-    const bookList = document.querySelector('.books-card');
-
-    bookList.innerHTML += `
-    <div class="books-card-flex">
-    <h3 class="book-title">${book[0].booktitle}</h3>
-    <p class="book-about">${book[0].bookauthor}</p>
-    <button type="button" class="button-remove">Remove</button>
-    </div>
-    `;
-  });
-});
+import Booklibrary from './module/books.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttonRemove = document.querySelectorAll('.button-remove');
@@ -96,3 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addNewPage.classList.remove('active');
   });
 });
+
+const Time = document.querySelector('.time');
+Time.textContent = DateTime.now().toLocaleString(
+  DateTime.DATETIME_MED,
+);

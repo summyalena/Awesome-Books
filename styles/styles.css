@@ -78,6 +78,12 @@ input {
   display: none;
 }
 
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .book-adder-section.active {
   display: block;
 }
