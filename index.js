@@ -1,4 +1,6 @@
+// eslint-disable-next-line
 import Booklibrary from './module/books.js';
+// eslint-disable-next-line
 import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 document.addEventListener('DOMContentLoaded', () => {
