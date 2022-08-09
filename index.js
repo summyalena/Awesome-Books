@@ -1,26 +1,20 @@
 // eslint-disable-next-line
-import Booklibrary from './module/books.js';
+import Books from './module/localStorage.js';
+
 // eslint-disable-next-line
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from './luxon.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const buttonRemove = document.querySelectorAll('.button-remove');
+document.querySelector('.books-card').addEventListener('click', (e) => {
+  if (e.target.tagName !== 'BUTTON') return;
 
-  buttonRemove.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      const bookAuthor = e.target.previousElementSibling.innerText;
-      const bookTitle = e.target.previousElementSibling.previousElementSibling.innerText;
-
-      const y = new Booklibrary(bookTitle, bookAuthor);
-      y.remove();
-      e.target.parentElement.remove();
-    });
-  });
+  const bookAuthor = e.target.previousElementSibling.innerText;
+  const bookTitle = e.target.previousElementSibling.previousElementSibling.innerText;
+  Books.remove(bookAuthor, bookTitle);
 });
 
-document.querySelector('form').addEventListener('submit', () => {
-  const x = new Booklibrary(document.querySelector('.title').value, document.querySelector('.author').value);
-  x.add();
+document.querySelector('form').addEventListener('submit', (e) => {
+  Books.add(document.querySelector('.title').value, document.querySelector('.author').value);
+  e.target.querySelectorAll('input').forEach((i) => i.value === '');
 });
 
 const addNewPage = document.querySelector('.book-adder-section');
@@ -53,3 +47,4 @@ const Time = document.querySelector('.time');
 Time.textContent = DateTime.now().toLocaleString(
   DateTime.DATETIME_MED,
 );
+Books.display();
