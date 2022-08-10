@@ -1,0 +1,139 @@
+.awesome-books {
+  margin: auto;
+  text-align: center;
+  padding: 1em;
+}
+
+.books-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.books-card-flex {
+  display: inline;
+  flex-direction: row;
+}
+
+.books-card-flex:nth-child(even) {
+  background-color: #efefef;
+}
+
+.button-remove {
+  margin-left: 45%;
+}
+
+.add-new-book {
+  display: block;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.book-title {
+  width: 20%;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.book-about {
+  width: 20%;
+  display: inline-block;
+}
+
+input {
+  margin: auto;
+  display: block;
+}
+
+.add {
+  margin: auto;
+  display: block;
+}
+
+.navbar {
+  display: block;
+  border: solid;
+  padding-left: 1.5em;
+}
+
+.nav-left {
+  display: inline-block;
+  width: 30%;
+}
+
+.nav-right {
+  float: right;
+  width: 50%;
+  margin-top: 1.5em;
+}
+
+.nav-right > li {
+  display: inline-block;
+  width: 32%;
+  margin: 0;
+}
+
+.book-adder-section {
+  display: none;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-adder-section.active {
+  display: block;
+}
+
+.book-list-section {
+  display: block;
+}
+
+.book-list-section.active {
+  display: none;
+}
+
+.footer-container {
+  border: solid black 2px;
+  margin-top: 2em;
+  padding-left: 2em;
+}
+
+.contact-section {
+  display: none;
+}
+
+.contact-section.active {
+  display: block;
+}
+
+.contact-header {
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+.contact-paragraph {
+  margin: auto;
+  text-align: justify;
+  width: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding-bottom: 2em;
+}
+
+.contact-list {
+  margin: auto;
+  width: 75%;
+}
+
+.contact-list > li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
